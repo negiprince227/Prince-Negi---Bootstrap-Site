@@ -1,0 +1,402 @@
+<!--
+Author: Prince Negi
+Author URL: http://
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Prince-Negi</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+   		 <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!----webfonts--->
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+		<!---//webfonts--->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+	</head>
+	<body>
+		<!----- start-header---->
+			<div id="home" class="header">
+					<div class="top-header">
+						<div class="container">
+						<div class="logo">
+							<a href="#"><img src="images/logo.png" title="Princenegi" /></a>
+						</div>
+						<!----start-top-nav---->
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li class="active"><a href="#home" class="scroll">About</a><span> </span></li>
+								<li><a href="#work" class="scroll">Work</a></li>
+								<li><a href="#contact" class="scroll">Contact</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+						<!----top-header-info--->
+						<div class="top-header-info">
+							<p>
+								Hello,<br/>
+								I'm Prince Negi. <br/>
+								A Software Developer/ Web Designer.<br/>
+								Based in INDIA<br/>
+							</p>
+							<a class="contactme" href="#">CONTACT ME</a>
+						</div>
+						<!----//End-header-info--->
+					</div>
+				</div>
+			</div>
+			<!----- //End-header---->
+			<!---- about us ---->
+			<div class="aboutus">
+				<div class="container">
+					<h2>ABOUT<br/>PRINCE NEGI</h2>
+					<span> </span>
+					<div class="col-md-6 aboutus-left">
+						<p>I am a dedicated, organized and methodical individual. I have good interpersonal skills, am an excellent team worker and am keen and very willing to learn and develop new skills. I am reliable and dependable and often seek new responsibilities within a wide range of employment areas. I have an active and dynamic approach to work and getting things done. I am determined and decisive. I identify and develop opportunities.</p>
+						<p>I’m a nice fun and friendly person, I’m honest and punctual, I work well in a team but also on my own as I like to set myself goals which I will achieve, I have good listening and communication skills. I have a creative mind and am always up for new challenges. I am well organized and always plan ahead to make sure I manage my time well.</p>
+					</div>
+					<div class="col-md-6 aboutus-right">
+						<p>Java developers typically have a bachelor’s degree. Some have a master’s. Employers often specify degrees in computer science, engineering, or other closely related fields. A developer should know a good deal beyond code; to advance, one should be proficient at different stages of the life cycle. University programs may include design projects that pair students with corporations. Internships can also be useful for breaking into the industry. Even Oracle takes on student interns. </p>
+						<p>A Java developer is a specialised type of programmer who may collaborate with web developers and software engineers to integrate Java into business applications, software and websites.  They are involved throughout the entire development life cycle of a product and must be able to identify and analyse any issues or problems and be able to come up with an efficient solution. Other duties may include collating and documenting user requirements, analysing data and quality assurance testing. </p>
+						<a class="aboutus-right-btn" href="#">MY RESUME</a>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!---- about us ---->
+			<!---- QUOTE ---->
+			<div class="quote text-center">
+				<div class="container">
+					<p>I am an energetic and enthusiastic person who enjoys a challenge and achieving personal goals. My present career aim is to work within IT because I enjoy working with computers, I enjoy the environment and I find the work interesting and satisfying. The opportunity to learn new skills and work with new technologies is particularly attractive to me.</p>
+				</div>
+			</div>
+			<!---- //QUOTE ---->
+			<!---- WORKS ---->
+			<div id="work" class="works">
+				<div class="container">
+					<h2>MY<br/>WORKS</h2>
+					<span> </span>
+				</div>
+				<!---- partners ---->
+				<div class="partners">
+					<!----sreen-gallery-cursual---->
+						<div class="sreen-gallery-cursual">
+							 <!-- requried-jsfiles-for owl -->
+							<link href="css/owl.carousel.css" rel="stylesheet">
+							    <script src="js/owl.carousel.js"></script>
+							        <script>
+							    $(document).ready(function() {
+							      $("#owl-demo").owlCarousel({
+							        items : 5,
+							        lazyLoad : true,
+							        autoPlay : true,
+							        navigation : true,
+							        navigationText :  false,
+							        pagination : false,
+							      });
+							    });
+							    </script>
+							 <!-- //requried-jsfiles-for owl -->
+							 <!-- start content_slider -->
+							 <div class="container">
+						       <div id="owl-demo" class="owl-carousel">
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/screen1.jpg" alt="screen-name">
+					                	<label>Mango Shop</label>
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/screen2.jpg" alt="screen-name">
+					                	<label>OpenCloud</label>
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/screen3.jpg" alt="screen-name">
+					                	<label>Bussiness</label>
+					                </div>					              
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/screen5.jpg" alt="screen-name">
+					                	<label>Never Stop Photography</label>
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/screen1.jpg" alt="screen-name">
+					                	<label>Mango Shop</label>
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/screen2.jpg" alt="screen-name">
+					                	<label>OPENCloud</label>
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/screen3.jpg" alt="screen-name">
+					                	<label>Bussiness</label>
+					                </div>
+				              </div>
+							</div>
+						<!--//sreen-gallery-cursual---->
+				</div>
+				<!---- //partners ---->
+				<!----project-grid---->
+				<div class="project-grid">
+					<div class="container">
+					<img class="project-screen" src="images/1.jpg" title="Himalayan" />
+					<!-- <img class="project-screen" src="images/2.jpg" title="Himalayan" />
+					<img class="project-screen" src="images/3.jpg" title="Himalayan" />
+					<img class="project-screen" src="images/4.jpg" title="Himalayan" />
+					<img class="project-screen" src="images/5.jpg" title="Himalayan" />
+					<img class="project-screen" src="images/6.jpg" title="Himalayan" />
+					<img class="project-screen" src="images/7.jpg" title="Himalayan" />
+					<img class="project-screen" src="images/7.jpg" title="Himalayan" />-->
+					<div class="project-grid-info">
+						<div class="col-md-3 project-grid-info-left">
+							<h3>CLIENT:</h3>
+							<label>Himalayan Institute</label>
+							<h3>WEBSITE:</h3>
+							<label><a href="#">http://www.himalayaninstitutions.com/</a></label>
+							<a class="sitedemo" href="http://www.himalayaninstitutions.com/">VISIT LIVE SITE</a>
+						</div>
+						<div class="col-md-9 project-grid-info-left">
+							<h3><a href="#">PROJECT TITLE</a></h3>
+							<ul class="project-share unstyled-list list-inline">
+								<li><a class="p-like" href="#"><label> </label> 144 LIKES</a></li>
+								<li><a class="p-share" href="#"><label> </label> SHARE</a></li>
+								<div class="clearfix"> </div>
+							</ul>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					</div>
+				</div>
+				<!----project-grid---->
+			</div>
+			</div>
+			<!---- //WORKS ---->
+			<!---- TESTIMONIAL ---->
+			<div class="testmonials">
+				<div class="container">
+					<h2>WHAT<br/>THEY SAY</h2>
+					<span> </span>
+				<div class="people-testmonials">
+					 <script>
+							    $(document).ready(function() {
+							      $("#owl-demo1").owlCarousel({
+							        items : 1,
+							        lazyLoad : true,
+							        autoPlay : true,
+							        navigation : false,
+							        navigationText :  false,
+							        pagination : true,
+							      });
+							    });
+						</script>
+					<div id="owl-demo1" class="owl-carousel">
+					                <div class="item ">
+					                	<p>" Delivery has been quick and efficient.Always prompt and friendly service "</p>
+					               		<div class="test-people">
+					               			<div class="test-people-pic">
+					               				<a href="#">
+					               					<img src="images/test-people-pic.png" title="name" />
+					               				</a>
+					               			</div>
+					               			<div class="test-people-info">
+					               				<a href="#">Nilesh Chetiwal</a>
+					               				<small>Managing Director ABC Ltd.</small>
+					               			</div>
+					               			<div class="clearfix"> </div>
+					               		</div>
+									</div>
+									<div class="item ">
+					                	<p>" Never any problems with deliveries or orders. Fast and efficient.Great staff never a problem. Everything is so easy."</p>
+					               		<div class="test-people">
+					               			<div class="test-people-pic">
+					               				<a href="#">
+					               					<img src="images/test-people-pic.png" title="name" />
+					               				</a>
+					               			</div>
+					               			<div class="test-people-info">
+					               				<a href="#">Diksha Chauhan</a>
+					               				<small>Managing Director ABC Ltd.</small>
+					               			</div>
+					               			<div class="clearfix"> </div>
+					               		</div>
+									</div>
+									<div class="item ">
+					                	<p>" Excellent and genuine Customer Service. Always reliable. Easy and quick to use. "</p>
+					               		<div class="test-people">
+					               			<div class="test-people-pic">
+					               				<a href="#">
+					               					<img src="images/test-people-pic.png" title="name" />
+					               				</a>
+					               			</div>
+					               			<div class="test-people-info">
+					               				<a href="#">Maanav Jii</a>
+					               				<small>Managing Director ABC Ltd.</small>
+					               			</div>
+					               			<div class="clearfix"> </div>
+					               		</div>
+									</div>
+									<div class="item ">
+					                	<p>" Great customer service . Efficient. Excellent customer service. Great service!"</p>
+					               		<div class="test-people">
+					               			<div class="test-people-pic">
+					               				<a href="#">
+					               					<img src="images/test-people-pic.png" title="name" />
+					               				</a>
+					               			</div>
+					               			<div class="test-people-info">
+					               				<a href="#">Mamta Thakur</a>
+					               				<small>Managing Director ABC Ltd.</small>
+					               			</div>
+					               			<div class="clearfix"> </div>
+					               		</div>
+									</div>
+									<div class="item ">
+					                	<p>" Always great service and the use of technology to order is fabulous. Keep up the great work"</p>
+					               		<div class="test-people">
+					               			<div class="test-people-pic">
+					               				<a href="#">
+					               					<img src="images/test-people-pic.png" title="name" />
+					               				</a>
+					               			</div>
+					               			<div class="test-people-info">
+					               				<a href="#">Rajender Kumar</a>
+					               				<small>Managing Director ABC Ltd.</small>
+					               			</div>
+					               			<div class="clearfix"> </div>
+					               		</div>
+									</div>
+									<div class="item ">
+					                	<p>" Excellent service, easy to use website for ordering, multiple payment options!"</p>
+					               		<div class="test-people">
+					               			<div class="test-people-pic">
+					               				<a href="#">
+					               					<img src="images/test-people-pic.png" title="name" />
+					               				</a>
+					               			</div>
+					               			<div class="test-people-info">
+					               				<a href="#">Shilpa Koul</a>
+					               				<small>Managing Director ABC Ltd.</small>
+					               			</div>
+					               			<div class="clearfix"> </div>
+					               		</div>
+									</div>
+				    </div>
+				</div>
+			</div>
+			</div>
+			<!---- //TESTIMONIAL ---->
+			<!---- CONTACT ----->
+			<div id="contact" class="contact"> 
+				<div class="container">
+					<h2>WAYS TO<br/>CONTACT ME</h2>
+					<span> </span>
+				<!----contact-grids---->
+				<div class="contact-grids">
+					<div class="col-md-6 contact-left">
+					<p> Please Fill the Form.:
+						<form>
+							<input type="text" value="Your beautiful name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your beautiful name';}">
+							<input type="text" value="Your email address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your email address';}">
+							<textarea rows="2" cols="70" onfocus="if(this.value == 'Leave your message') this.value='';" onblur="if(this.value == '') this.value='Leave your message';">Leave your message</textarea>
+							<input type="submit" value="SEND MESSAGE" />
+							<div class="clearfix"> </div>
+						</form>
+						</div>
+					<div class="col-md-6 contact-right">
+						<p>Get in touch with me.:</p>
+						<div class="address">
+							<label>Hello@Prince Negi</label>
+							<label>+91 9882166220</label>
+							<label>negi.prince227@gmail.com</label>
+						</div>
+						<div class="clearfix"> </div>
+						<div class="address">
+							<label>HGPI BUILDING</label>
+							<label>Near Suketi Fossil Park Road</label>
+							<label>Kala Amb, Himachal Pradesh 173030</label>
+						</div>
+						<div class="clearfix"> </div>
+						<div class="social-share">
+							<h4>ON SOCIAL</h4>
+							<ul class="unstyled-list list-inline">
+								<li><a class="facebook" href="https://www.facebook.com/princerk.0007"><span> </span></a></li>
+								<li><a class="twitter" href="#"><span> </span></a></li>
+								<li><a class="googlepluse" href="https://plus.google.com/u/0/101640406797539438927"><span> </span></a></li>
+								<li><a class="dribbble" href="#"><span> </span></a></li>
+								<div class="clearfix"> </div>
+							</ul>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			</div>
+			<!---- CONTACT ----->
+			<!----contact-map---->
+			<div class="contact-map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27498.35101589654!2d77.18949062784311!3d30.512728179700304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f09c2c6e1cda1%3A0xa5c1f4613f309beb!2sKala+Amb%2C+Himachal+Pradesh!5e0!3m2!1sen!2sin!4v1515967373014" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<label>I'M HERE</label>
+			</div>
+			<!----contact-map---->
+			<div class="copy-right text-center">
+				<div class="container">
+					<p>Designd by <a href="http://princenegi.pe.hu/">Prince Negi</a></p>
+					<label>Copyright 2018. All rights reserved.</label>
+								<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+									<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	
+				</div>
+			</div>
+	</body>
+</html>
+
